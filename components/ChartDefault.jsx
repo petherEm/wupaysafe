@@ -8,6 +8,8 @@ const ChartDefault = () => {
   const [dataset, setDataset] = useState([]);
   const [RPT, setRPT] = useState(25);
   const [PPT, setPPT] = useState(250);
+  const [cost, setCost] = useState(0);
+  const [totalCost, setTotalCost] = useState(0)
   const [yearOne, setYearOne] = useState(30000);
   const [yearTwo, setYearTwo] = useState(40000);
   const [yearThree, setYearThree] = useState(50000);
@@ -19,6 +21,7 @@ const ChartDefault = () => {
   function calculate(
     RPT,
     PPT,
+    cost,
     yearOne,
     yearTwo,
     yearThree,
@@ -26,13 +29,25 @@ const ChartDefault = () => {
     yearFive
   ) {
     let data = [];
+    let costArray = [];
+
     const year1_rev = RPT * yearOne;
     const year2_rev = RPT * yearTwo;
     const year3_rev = RPT * yearThree;
     const year4_rev = RPT * yearFour;
     const year5_rev = RPT * yearFive;
 
+    const year1_cost = PPT * yearOne * cost;
+    const year2_cost = PPT * yearTwo * cost;
+    const year3_cost = PPT * yearThree * cost;
+    const year4_cost = PPT * yearFour * cost;
+    const year5_cost = PPT * yearFive * cost;
+
+
+
     let totalRev = year1_rev + year2_rev + year3_rev + year4_rev + year5_rev;
+    let totalCost = year1_cost + year2_cost + year3_cost + year4_cost + year5_cost
+    
 
     let sumOfTxn =
       parseInt(yearOne) +
@@ -44,10 +59,14 @@ const ChartDefault = () => {
     let totalPrincipal = PPT * sumOfTxn;
 
     data.push(year1_rev, year2_rev, year3_rev, year4_rev, year5_rev);
+    costArray.push(year1_cost, year2_cost, year3_cost, year4_cost, year5_cost);
 
     setPrincipal(totalPrincipal);
     setSum(totalRev);
     setDataset(data);
+    setCost(costArray);
+    setTotalCost(totalCost);
+
   }
 
   return (
@@ -73,6 +92,17 @@ const ChartDefault = () => {
               className="focus:outline-none w-[50px] p-1 shadow-md rounded-lg text-gray-100 text-sm bg-red-300"
               value={PPT}
               onChange={(e) => setPPT(e.target.value)}
+            />
+          </div>
+
+          <div className="flex flex-col m-2">
+            <label className="text-[10px]">Paysafe (% from PPT)</label>
+            <input
+              type="number"
+              placeholder="decim."
+              className="focus:outline-none w-[50px] p-1 shadow-md rounded-lg text-gray-100 text-sm bg-red-300"
+              value={cost}
+              onChange={(e) => setCost(e.target.value)}
             />
           </div>
         </div>
@@ -140,6 +170,7 @@ const ChartDefault = () => {
             calculate(
               RPT,
               PPT,
+              cost,
               yearOne,
               yearTwo,
               yearThree,
@@ -170,6 +201,13 @@ const ChartDefault = () => {
                 borderColor: ["rgba(255, 99, 132, 1)"],
                 borderWidth: 1,
               },
+              {
+                label: "Cost in $",
+                data: cost,
+                backgroundColor: ["rgba(85, 169, 243, 0.8)"],
+                borderColor: ["rgba(85, 169, 243, 1)"],
+                borderWidth: 1,
+              },
             ],
           }}
           options={{ responsive: true }, {aspectRatio: 1.5 }}
@@ -181,7 +219,7 @@ const ChartDefault = () => {
         <div>
           <p className="text-lg">
             Total Revenue: ${" "}
-            <span className="font-bold">{dollarUSLocale.format(sum)}</span>
+            <span className="font-bold text-green-600">{dollarUSLocale.format(sum)}</span>
           </p>
         </div>
         <div>
@@ -189,6 +227,14 @@ const ChartDefault = () => {
             Total Principal: ${" "}
             <span className="font-bold">
               {dollarUSLocale.format(principal)}
+            </span>
+          </p>
+        </div>
+        <div>
+          <p className="text-lg">
+            Total Cost: ${" "}
+            <span className="font-bold text-red-500">
+              {dollarUSLocale.format(totalCost)}
             </span>
           </p>
         </div>

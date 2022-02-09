@@ -3,7 +3,7 @@ import { ArrowNarrowLeftIcon } from "@heroicons/react/solid";
 
 const Register = () => {
   return (
-    <div className="flex flex-col justify-between bg-gray-300 lg:h-[640px] lg:w-[420px] shadow-lg mb-60">
+    <div className="flex flex-col justify-between bg-gray-300 h-[620px] w-[380px] shadow-lg mb-60">
       <div className="flex justify-between items-center bg-black text-yellow-400 px-2 py-4">
         <div className="ml-2 cursor-pointer"><ArrowNarrowLeftIcon className="w-7 h-7" /></div>
         <div>Register</div>
@@ -79,7 +79,7 @@ const Register = () => {
           </div>
         </div>
         <div className="h-[10%] flex flex-col justify-center">
-          <button className="bg-blue-300 py-2 px-44 mb-4 rounded-2xl hover:scale-105 transition duration-75 ease-in-out">
+          <button className="bg-blue-300 py-2 lg:px-44 px-32 mb-4 rounded-2xl hover:scale-105 transition duration-75 ease-in-out">
             Next
           </button>
         </div>

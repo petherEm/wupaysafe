@@ -12,18 +12,25 @@ import CommentBox from "../components/CommentBox";
 
 export default function NewUser() {
   return (
-    <div className="relative flex flex-col">
-      <div className="absolute top-24 right-10">
-        <CommentBox />
-      </div>
-      <div className="bg-yellow-500 lg:px-40 h-screen flex items-center lg:justify-center gap-x-20">
+    <div className="flex flex-col">
+      <div className="bg-yellow-500  min-h-screen flex items-center lg:justify-center gap-x-20">
         <LoginPage />
       </div>
-      <div className="bg-yellow-500  min-h-screen flex items-center justify-center">
+      <div className="bg-yellow-500  min-h-screen flex items-center lg:justify-center gap-x-20">
         <SendMoney />
+        <CommentBox
+          title="To consider"
+          content1="New payment method (Paysafe:cash) addition to the current flow"
+          content2="in AT we have also Klarna as payment method"
+        />
       </div>
-      <div className="bg-yellow-500  min-h-screen flex items-center justify-center">
+      <div className="bg-yellow-500  min-h-screen flex items-center lg:justify-center gap-x-20">
         <Register />
+        <CommentBox
+          title="Registration data capture"
+          content1="First Name, Last Name, Email"
+          content2="and password creation"
+        />
       </div>
       <div className="bg-yellow-500  min-h-screen flex items-center justify-center">
         <Receiver />
