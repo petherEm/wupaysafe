@@ -36,7 +36,7 @@ const Receiver = () => {
                 </div>
             </div>
             <div className="flex flex-col p-4">
-                <h1 className="text-gray-700">Receiver's information</h1>
+                <h1 className="text-gray-700">Receiver information</h1>
                 <div>
                     <input type="text" className="mt-2 rounded-lg py-2 px-6 mr-2 focus:outline-none text-[12px]" placeholder="First Name" />
                     <input type="text" className="mt-2 rounded-lg py-2 px-6 focus:outline-none text-[12px]" placeholder="Last Name" />

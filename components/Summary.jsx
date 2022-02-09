@@ -99,8 +99,8 @@ const Summary = () => {
                 </div>
             </div>
             <div className="flex p-4 mt-2 items-center">
-                <input type="checkbox" class="h-5 w-10" />
-                <p className="text-[11px] ml-2 text-gray-600">I agree to the Western Union Online Privacy Statement, I confirm that I'm not conducting this transaction on behalf of another person.</p>
+                <input type="checkbox" className="h-5 w-10" />
+                <p className="text-[11px] ml-2 text-gray-600">I agree to the Western Union Online Privacy Statement, I confirm that I am not conducting this transaction on behalf of another person.</p>
             </div>
           </div>
 
