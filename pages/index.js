@@ -10,6 +10,7 @@ import PaysafeBar from "../components/PaysafeBar";
 import PaysafeVerification from "../components/PaysafeVerification";
 import Summary from "../components/Summary";
 import Confirmation from "../components/Confirmation";
+import CompleteReg from "../components/CompleteReg";
 
 export default function Home() {
   return (
@@ -26,6 +27,9 @@ export default function Home() {
       
       <div className="bg-yellow-500  min-h-screen flex items-center justify-center p-4">
         <Receiver />
+      </div>
+      <div className="bg-yellow-500  min-h-screen flex items-center justify-center p-4">
+        <CompleteReg />
       </div>
       <div className="bg-yellow-500  min-h-screen flex items-center justify-center p-4">
         <IDdetails />

@@ -6,35 +6,44 @@ import ChartDefault from "../components/ChartDefault";
 export default function Business() {
   return (
     <>
-
-
       {/* POLAND BUSINESS POTENTIAL */}
-
-
 
       <div className="flex lg:flex-row flex-wrap lg:p-2 bg-blue-100">
         <div className="lg:p-8 p-2 lg:h-1/2 lg:w-1/2">
           <h1 className="text-6xl font-bold">POLAND BUSINESS POTENTIAL</h1>
           <p className="text-[18px] mt-10">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Dignissimos maxime molestias numquam maiores nobis eius architecto
-            in aut modi sequi. Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit. Pariatur iure ex porro enim iste tempore optio
-            voluptate obcaecati ducimus, asperiores veniam excepturi
-            repudiandae? Ad eum aut vitae quae illo ipsam corrupti atque fugiat
-            architecto. Reiciendis ipsam iure molestias iusto, nulla ad sunt
-            tenetur officia nisi atque, consequuntur unde non totam.
+            <span className="font-bold">
+              Paysafe:cash is a cash payment method for online goods and
+              services.{" "}
+            </span>
+            Widely used by customers that are not willing to provide card/bank
+            details for online payments, by unbanked customers and those who are
+            cash-oriented. The given use cases are highly correlated with
+            retail, Western Union customer base hence cooperation with
+            Paysafe:cash could be a solid back-up for the existing WU agent
+            network.
           </p>
           <p className="text-[18px] mt-10">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Dignissimos maxime molestias numquam maiores nobis eius architecto
-            in aut modi sequi. Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit. Pariatur iure ex porro enim iste tempore optio
-            voluptate obcaecati ducimus, asperiores veniam excepturi
-            repudiandae? Ad eum aut vitae quae illo ipsam corrupti atque fugiat
-            architecto. Reiciendis ipsam iure molestias iusto, nulla ad sunt
-            tenetur officia nisi atque, consequuntur unde non totam.
+            In most countries where Paysafecash is offered customer are required
+            to register once for a Paysafecash Account in order to comply with
+            international Anti-Money- Laundering regulation. For the customer
+            the account provides significant benefits such as a transaction
+            history, storage of generated barcodes and the option to have
+            refunds paid into the Paysafecash Account for future payments.
           </p>
+          <ul className="ml-6 list-disc">
+            <li className="text-[18px] mt-10">
+              The proposed business model consist on leveraging Paysafe:cash
+              network with no direct, agent-like relation to retailers.
+            </li>
+            <li className="text-[18px] mt-10">
+              Paysafe:cash fee is set as percentage from the sent principal.
+            </li>
+            <li className="text-[18px] mt-10">
+              Paysafe:cash may faciliate direct marketing action/activit across
+              POS to ensure proper customer education and product adoption.
+            </li>
+          </ul>
         </div>
         <div className="lg:p-8 p-2 lg:h-1/2 lg:w-1/2">
           <ChartDefault />
@@ -68,10 +77,7 @@ export default function Business() {
         </div>
       </div>
 
-
-
       {/* AUSTRIA BUSINESS POTENTIAL */}
-
 
       <div className="flex lg:flex-row flex-wrap lg:p-2 bg-blue-100">
         <div className="lg:p-8 p-2 lg:h-1/2 lg:w-1/2">

@@ -26,29 +26,29 @@ const Register = () => {
           <div className="flex">
             <div className="flex flex-col p-2">
               <input
-                className="mt-2 rounded-lg py-2 px-6 focus:outline-none text-[12px]"
+                className="mt-2 rounded-lg py-2 px-4 focus:outline-none text-[12px]"
                 type="text"
                 placeholder="First Name"
               />
               <input
-                className="mt-2 rounded-lg py-2 px-6 focus:outline-none text-[12px]"
+                className="mt-2 rounded-lg py-2 px-4 focus:outline-none text-[12px]"
                 type="text"
                 placeholder="Last Name"
               />
               <input
-                className="mt-2 rounded-lg py-2 px-6 focus:outline-none text-[12px]"
+                className="mt-2 rounded-lg py-2 px-4 focus:outline-none text-[12px]"
                 type="email"
                 placeholder="Your email address"
               />
             </div>
             <div className="flex flex-col p-2">
               <input
-                className="mt-2 rounded-lg py-2 px-6 focus:outline-none text-[12px]"
+                className="mt-2 rounded-lg py-2 px-4 focus:outline-none text-[12px]"
                 type="text"
                 placeholder="Middle Name (optional)"
               />
               <input
-                className="mt-2 rounded-lg py-2 px-6 focus:outline-none text-[12px]"
+                className="mt-2 rounded-lg py-2 px-4 focus:outline-none text-[12px]"
                 type="password"
                 placeholder="Create password"
               />
@@ -79,7 +79,7 @@ const Register = () => {
           </div>
         </div>
         <div className="h-[10%] flex flex-col justify-center">
-          <button className="bg-blue-300 py-2 lg:px-44 px-32 mb-4 rounded-2xl hover:scale-105 transition duration-75 ease-in-out">
+          <button className="bg-blue-300 py-2 lg:px-38 px-32 mb-4 rounded-2xl hover:scale-105 transition duration-75 ease-in-out">
             Next
           </button>
         </div>

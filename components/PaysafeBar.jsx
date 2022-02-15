@@ -4,7 +4,7 @@ import { ArrowLeftIcon, DocumentDownloadIcon, CollectionIcon, MailIcon, DeviceMo
 
 const PaysafeBar = () => {
   return (
-    <div className="flex flex-col justify-between bg-white lg:h-[640px] lg:w-[420px] shadow-lg mb-60">
+    <div className="flex flex-col justify-between bg-white lg:h-[640px] lg:w-[420px] md:h-[640px] md:w-[420px] shadow-lg mb-60">
       <div className="flex justify-between items-center  text-blue-500 px-2 py-4">
         <div className="ml-2 cursor-pointer">
           <ArrowLeftIcon className="h-5 w-5" />

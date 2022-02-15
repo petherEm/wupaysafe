@@ -8,6 +8,8 @@ import IDdetails from "../components/IDdetails";
 import PaysafeLogin from "../components/PaysafeLogin";
 import PaysafeBar from "../components/PaysafeBar";
 import PaysafeVerification from "../components/PaysafeVerification";
+import Summary from "../components/Summary";
+import Confirmation from "../components/Confirmation";
 
 export default function ExistingUser() {
   return (
@@ -33,6 +35,14 @@ export default function ExistingUser() {
       <div className="bg-yellow-500  min-h-screen flex flex-col items-center justify-center">
         <h1>Redirected</h1>
         <PaysafeBar />
+      </div>
+      <div className="bg-yellow-500  min-h-screen flex flex-col items-center justify-center">
+        <h1>Redirected</h1>
+        <Summary />
+      </div>
+      <div className="bg-yellow-500  min-h-screen flex flex-col items-center justify-center">
+        <h1>Redirected</h1>
+        <Confirmation />
       </div>
     </>
   );

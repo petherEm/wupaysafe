@@ -4,7 +4,7 @@ import { ArrowNarrowLeftIcon } from "@heroicons/react/solid";
 
 const Confirmation = () => {
   return (
-    <div className="flex flex-col justify-between bg-gray-300 lg:h-[640px] lg:w-[420px] shadow-lg mb-60">
+    <div className="flex flex-col justify-between bg-gray-300 lg:h-[640px] lg:w-[420px] md:h-[640px] md:w-[420px] shadow-lg mb-60">
       <div className="flex justify-between items-center bg-black text-yellow-400 px-2 py-4">
         <div className="ml-2 cursor-pointer"><ArrowNarrowLeftIcon className="w-7 h-7" /></div>
         <div className="mr-4 border border-yellow-400 p-1 cursor-pointer hover:text-yellow-700 hover:border-yellow-700">
